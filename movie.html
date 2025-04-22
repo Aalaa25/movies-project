@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- heeader -->
+<div class="header">
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="series.html">series</a></li>
+                <li><a href="movie.html">movies</a></li>
+                <li><a href="kids.html">kids</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+
+<!-- search -->
+<div class="search">
+    <div class="container">
+    <form action="">
+        <input type="text" id="searchuser" placeholder="what are you looking for?" class="searchs" >
+    </form>
+    </div>
+</div>
+
+<!-- movies -->
+<div class="movies">
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="img/a beautiful mind.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal51" id="more51"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/age of adaline.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal52" id="more52"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/annabelle.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal53" id="more53"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/iron man.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal54" id="more54"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/collateral beauty.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal55" id="more55"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/captain americs.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal56" id="more56"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/begin again.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal57" id="more57"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/the proposal.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal58" id="more58"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/the princess diaries.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal59" id="more59"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/star wars.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal60" id="more60"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/lion.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal61" id="more61"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img//now you see me.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal62" id="more62"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/lord of rings.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal63" id="more63"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/maze runner.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal64" id="more64"> More</button>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/ant man.jpg" alt="">
+            </div>
+            <button  data-modal-target="#modal65" id="more65"> More</button>
+        </div>
+    </div>
+</div>
+
+<!-- button -->
+<div class="btn">
+    <button class="lastmore">More</button>
+</div>
+
+<!-- modal51--->
+<div class="modal" id="modal51">
+    <div class="prev">preview</div>
+    <button  data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :   A Beautiful Mind</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   drama , excitement  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+       <pre>The Story  :
+        After John Nash, a brilliant but asocial
+        mathematician, accepts secret work in 
+        cryptography, his life takes a turn for 
+        the nightmarish
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/aS_d0Ayjw4o" class="watch51" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+<!-- modal52--->
+<div class="modal" id="modal52">
+    <div class="prev">preview</div>
+    <button  data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :   The Age Of Adaline</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   drama , excitement  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+       <pre>The Story  :
+        After miraculously remaining 29 years 
+        old for almost eight decades, Adaline
+        Bowman has lived a solitary existence, 
+        never allowing herself to get close to
+        anyone who might reveal her secret
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/7UzSekc0LoQ" class="watch51" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+<!-- modal53--->
+<div class="modal" id="modal53">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    annabelle</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Horor , thriller  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        Samuel and Elle embed their daughter's 
+        spirit into a doll, only to realise it 
+        is a demon. Years later, they open their 
+        home to a nun and six orphan girls,
+        one of whom finds the doll
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/1GzHe3ELJXc" class="watch53" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal54--->
+<div class="modal" id="modal54">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    iron man 3</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   action , adventures  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        Tony Stark encounters a formidable foe called 
+        the Mandarin.After failing to defeat his enemy, 
+        Tony embarks on a journey of self-discovery as
+        he fights against the powerful Mandarin.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/Ke1Y3P9D0Bc" class="watch54" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal55--->
+<div class="modal" id="modal55">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    collateral beauty</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Romance , Drama </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+    Howard Inlet, an advertising executive,
+    becomes depressed post the tragic death
+    of his young daughter, Olivia.
+    His business partners hire actors to prove
+    his mental illness and take over his company. 
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/isQ5Ycie73U" class="watch55" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal56--->
+<div class="modal" id="modal56">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    captain America</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   series   </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+            Steve Rogers, a rejected military soldier, 
+            transforms into Captain America after 
+            taking a dose of a "Super-Soldier 
+            serum". But being Captain America 
+            comes at a price as he attempts to take
+            down a warmonger and a terrorist organization  
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/1GzHe3ELJXc" class="watch56" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal57--->
+<div class="modal" id="modal57">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    begin again</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   comedy , Drama  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        A chance encounter between a down-and-out 
+        music-business executive and a young 
+        singer-songwriter, new to Manhattan,
+        turns into a promising collaboration 
+        between the two talents.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/uTRCxOE7Xzc" class="watch57" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+<!-- modal58--->
+<div class="modal" id="modal58">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    the proposal</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Romance, comdey  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        A pushy boss forces her young assistant to 
+        marry her, in order to keep her visa 
+        status in the U.S. and , 
+        avoid deportation to Canada.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/Z2lYA7L7PZY" class="watch58" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal59--->
+<div class="modal" id="modal59">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :  the princess diaries</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   comedy , Romance  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        Mia Thermopolis has just found out that 
+        she is the heir apparent to the throne 
+        of Genovia. With her friends Lilly and 
+        Michael Moscovitz in tow, she tries to 
+        navigate through the rest of her. 
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/CzcGwB7qat8" class="watch59" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal60--->
+<div class="modal" id="modal60">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    star wars</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   fiction , drama , action   </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        is a 1977 American epic space opera film 
+        written and directed by George Lucas,
+        produced by Lucasfilm and distributed by 
+        20th Century Fox. It is the first film in 
+        the Star Wars film series and, fourth 
+        chronological chapter of the "Skywalker Saga".  
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/sGbxmsDFVnE" class="watch60" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal61--->
+<div class="modal" id="modal61">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    lion</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Drama , family  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        It is the adaptation of a non-fiction book
+        named A LongWay Home written by Saroo Brierley.
+        The book is an account of Saroo's accidental
+        separationfrom his family in India and his
+        adoption by an Australian couple,and his eventual
+        search for his biological family 
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/-RNI9o06vqo" class="watch61" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal62--->
+<div class="modal" id="modal62">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    now you see me</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   action , thriller  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        An F.B.I. Agent and an Interpol Detective track
+        a team of illusionists who pull off bank
+        heists during their performances,
+        and reward their audiences with the money.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/KzJNYYkkhzc" class="watch62" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal63--->
+<div class="modal" id="modal63">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    the lord of the rings</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   series  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        A meek Hobbit from the Shire and eight 
+        companions set out on a journey to 
+        destroy the powerful One Ring and save 
+        Middle-earth from the Dark Lord Sauron.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/x8UAUAuKNcU" class="watch63" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal64--->
+<div class="modal" id="modal64">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :   the maze runner</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Science fiction , action  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        Thomas is deposited in a community
+        of boys after his memory is erased,
+        soon learning they're all trapped in
+        a maze that will require him to
+        join forces with fellow "runners"
+        for a shot at escape.
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/AwwbhhjQ9Xk" class="watch64" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+
+
+<!-- modal65--->
+<div class="modal" id="modal65">
+    <div class="prev">preview</div>
+    <button data-close-button class="close">&times;</button>
+    <div class="name">
+        <pre>Name      :    ANT_MAN</pre>
+    </div>
+    <hr>
+    <div class="type">
+        <pre>Type      :   Adventure , action  </pre>
+    </div>
+    <hr>
+    <div class="language">
+        <pre>Language  :   English</pre>
+    </div>
+    <hr>
+    <div class="quality">
+        <pre>Quality   :   1080p</pre>
+    </div>
+    <hr>
+    <div class="story">
+        <pre>The Story  :
+        Armed with a super-suit with the astonishing 
+        ability to shrink in scale but increase in 
+        strength, cat burglar Scott Lang must embrace 
+        his inner hero and help  his mentor,
+    </pre>
+    </div>
+    <hr>
+    <div class="trailer">
+        <pre>Trailer   :    <a href="https://youtu.be/pWdKf3MneyI" class="watch65" target="_blank">watch</a></pre>
+    </div>
+    <hr>
+    <div class="form1">
+        <form action="">
+            <button class="down">Download</button>
+            <button class="wat">Watch</button>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
+</body>
