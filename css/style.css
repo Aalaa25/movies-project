@@ -1,0 +1,7608 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --daredevil-color: #5c2525;
+    --wednesday-color:rgb(35 35 53);
+    --anne-color:rgb(103 47 28);
+    --strangerthings-color:#3c4959;
+    --moonknight-color:#070707;
+    --loki-color:#0f250f;
+    --spider-man-color:rgb(21 26 57);
+    --mouse-color:rgb(67 84 154);
+    --mr-robot-color:rgb(0 18 32);
+    --black-panther-color:#3d4b53;
+    --intersteller-color:#2e3346;
+    --black-adam-color:#10150f;
+    --fast-and-surious-color:#1f1f1f;
+    --alice-in-wonderland-color:#1f1f1f;
+    --avatar-color:#152d59;
+    --big-mouth-color:#467f5e;
+    --divergent-color:#07060b;
+    --doctor-strange-color:#18202a;
+    --free-guy-color:#051416;
+    --friends-color:#927867;
+    --good-doctor-color:#2b7bc8;
+    --harry-poter-color:#3b5a5b;
+    --home-alone-color:#52161b;
+    --home-town-color:#a17842;
+    --hunger-games-color:#e66a2d;
+    --inception-color:#135e7b;
+    --john-week-color:#135e7b;
+    --little-women-color:#201519;
+    --potc-color:#81674c;
+    --pride-color:#b84217;
+    --toet-color:#636846;
+    --suits-color:black;
+    --tvd-color:#6f1a15;
+    --wanda-vision-color:#d89695;
+    --werwwolof-color:#2b1c11;
+    --wonder-color:#4a5420;
+    --oneone-color:#1f1516;
+    --behind-hereyes-color:#349e80;
+    --bridgerton-color:#19381f;
+    --dark-color:#1d2539;
+    --got-color:#12263f;
+    --house-color:#1c2729;
+    --lacasa-color:#711b16;
+    --lusifier-color:#1f1514;
+    --originals-color:#150102;
+    --witcher-color:#131b1d;
+    --therain-color:#25485b;
+    --the100-color:#2a2b30;
+    --teenwolf-color:#3e454d;
+    --supernatural-color:#43351a;
+    --sandman-color:#010510;
+    --a-beatifulmind-color:rgb(8 25 32);
+    --ageofadaline-color:rgb(126 95 96);
+    --anabelle-color:rgb(0 14 15);
+    --ironman-color:rgb(148 27 15);
+    --collateralbeauty-color:rgb(96 127 167);
+    --captainamerica-color:rgb(8 43 91);
+    --beginagain-color:rgb(59 68 80);
+    --proposal-color:rgb(216 17 5);
+    --princessdiaries-color:rgb(130 123 164);
+    --starwars-color:rgb(2 6 25);
+    --lion-color:rgb(42 18 17);
+    --nowyouseeme-color:rgb(18 36 56);
+    --lordofrings-color:rgb(69 60 42);
+    --mazerunner-color:rgb(79 89 88);
+    --antman-color:rgb(196 1 20);
+    --bighero6-color:rgb(207 25 36);
+    --brave-color:rgb(122 40 28);
+    --coco-color:rgb(230 114 88);
+    --coraline-color:rgb(56 59 132);
+    --cropsepride-color:rgb(56 76 94);
+    --encanto-color:rgb(78 161 131);
+    --hoteltranslvnia-color:rgb(24 27 32);
+    --insideout-color:rgb(66 43 113);
+    --nutcracker-color:rgb(20 21 39);
+    --pinocchio-color:rgb(50 66 112);
+    --zootopia-color:rgb(144 179 220);
+    --lionking-color:rgb(41 1 0);
+    --incredibles-color:rgb(179 18 10);
+    --gooddinasour-color:rgb(1 57 56);
+    --klaus-color:rgb(71 47 11);
+    --main-transition: 0.5s;
+    --main-padding-top: 50px;
+    --main-padding-bottom: 20px;
+    --section-background: #1a252b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--section-background);
+    font-family: "Cairo", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header{
+position: relative;
+background-color: var(--section-background);
+-webkit-box-shadow: 0 0 10px black;
+-moz-box-shadow: 0 0 10px black;
+box-shadow: 0 0 10px black;
+padding: 10px;
+}
+
+.header .container .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .container .menu ul li {
+    margin-left: 10px;
+    background:linear-gradient(to left, rgb(34, 84, 100), rgb(29, 29, 29));
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header .container .menu ul li:last-child{
+    padding: 10px 15px;
+}
+
+.header .container .menu ul li a{
+    color: white;
+    text-transform: capitalize;
+}
+
+.header .container .menu ul li a:hover{
+    transition: var(--main-transition);
+    background:linear-gradient(to right, rgb(34, 84, 100), rgb(29, 29, 29));
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* search  */
+.search .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search{
+    margin-top: 40px;
+}
+
+.search .searchs{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: rgba(229, 228, 233, 0.9);
+    padding: 10px 50px;
+    width: 350px;
+    text-align: center;
+    display: block;
+    margin: 0 15px;
+}
+@media (max-width : 430px) {
+    .search .searchs{
+    width: 300px;
+    padding: 10px 40px;
+    }
+}
+
+.search .searchs::placeholder{
+    color: var(--section-background);
+}
+
+/* home */
+.home{
+    margin: 0px 20px;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.home .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.home .box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.home .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.home .box img{
+    max-width: 100%;
+    transition: var(--main-transition);
+}
+
+.home .box .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 20%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.home .box .image:hover::before {
+    animation: flashing 0.7s;
+}
+
+.home .box .image:hover img {
+transform: rotate(5deg) scale(1.1);
+}
+
+#more button{
+    display: block;
+    margin: 3px auto;
+}
+.home #more{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--daredevil-color);
+    border: 2px solid var(--daredevil-color);
+    border-radius: 6px;
+    margin: 6px 0 0 0;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* transition */
+@keyframes flashing {
+    0%,
+    40% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 200%;
+      height: 200%;
+    }
+}
+
+
+/* series */
+.series{
+    margin: 0px 20px 20px;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.series .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.series .box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.series .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.series .box img{
+    max-width: 100%;
+    transition: var(--main-transition);
+}
+
+.series .box .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 20%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.series .box .image:hover::before {
+    animation: flashing 0.7s;
+}
+
+.series .box .image:hover img {
+transform: rotate(5deg) scale(1.1);
+}
+
+
+/* movies */
+.movies{
+    margin: 0px 20px 20px;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.movies .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.movies .box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.movies .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.movies .box img{
+    max-width: 100%;
+    transition: var(--main-transition);
+}
+
+.movies .box .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 20%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.movies .box .image:hover::before {
+    animation: flashing 0.7s;
+}
+
+.movies .box .image:hover img {
+transform: rotate(5deg) scale(1.1);
+}
+
+/* kids */
+.kids{
+    margin: 0px 20px 20px;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.kids .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.kids .box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.kids .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.kids .box img{
+    max-width: 100%;
+    transition: var(--main-transition);
+}
+
+.kids .box .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 20%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.kids .box .image:hover::before {
+    animation: flashing 0.7s;
+}
+
+.kids .box .image:hover img {
+transform: rotate(5deg) scale(1.1);
+}
+
+/* btn more */
+.btn .lastmore{
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, rgb(84, 118, 129), rgb(163, 97, 160));
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 22px;
+}
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--daredevil-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+.modal pre{
+    font-size: 17px;
+    padding: 3px 10px;
+    color: white;
+}
+.modal .form1{
+    margin-top: 20px;
+}
+.modal form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+.modal form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--daredevil-color);
+    border: none;
+    border-radius: 2px;
+}
+.modal .prev{
+text-align: center;
+text-transform: capitalize;
+font-size: 18px;
+color: white;
+}
+.modal .go{
+    position: relative;
+    right: -210px;
+    top: -55px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--daredevil-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--daredevil-color);
+}
+.modal .watch {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--daredevil-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--daredevil-color);
+    color: white;
+}
+.modal .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+  
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* modal1 */
+#modal1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--wednesday-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal1.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal1 .form1{
+    margin-top: 20px;
+}
+#modal1 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal1 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--wednesday-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal1 .go1{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wednesday-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: rgb(35 35 53);
+}
+#modal1 .watch1 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wednesday-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: rgb(35 35 53);
+    color: white;
+}
+.home #more1{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--wednesday-color);
+    border: 2px solid var(--wednesday-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+#modal1 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+
+/* modal2 */
+#modal2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--anne-color) , rgb(19 46 73));
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal2.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal2 .form1{
+    margin-top: 20px;
+}
+#modal2 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal2 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: rgb(19 46 73);
+    border: none;
+    border-radius: 2px;
+}
+#modal2 .go2{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(19 46 73);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: rgb(19 46 73);
+}
+#modal2 .watch2 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(19 46 73);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: rgb(19 46 73);
+    color: white;
+}
+#modal2 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more2{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--anne-color);
+    border: 2px solid var(--anne-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal3 */
+#modal3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to top , var(--strangerthings-color) , #cd1f1d);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal3.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal3 .form1{
+    margin-top: 20px;
+}
+#modal3 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal3 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: #cd1f1d;
+    border: none;
+    border-radius: 2px;
+}
+#modal3 .go3{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #cd1f1d;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: #cd1f1d;
+}
+#modal3 .watch3 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #cd1f1d;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: #cd1f1d;
+    color: white;
+}
+#modal3 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more3{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--strangerthings-color);
+    border: 2px solid var(--strangerthings-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal4 */
+#modal4{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to top , var(--moonknight-color) , #858585);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal4.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal4 .form1{
+    margin-top: 20px;
+}
+#modal4 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal4 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--moonknight-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal4 .go4{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--moonknight-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--moonknight-color);
+}
+#modal4 .watch4 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--moonknight-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--moonknight-color);
+    color: white;
+}
+#modal4 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more4{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--moonknight-color);
+    border: 2px solid var(--moonknight-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal5 */
+#modal5{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--loki-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal5.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal5 .form1{
+    margin-top: 20px;
+}
+#modal5 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal5 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--loki-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal5 .go5{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--loki-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--loki-color);
+}
+#modal5 .watch5 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--loki-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--loki-color);
+    color: white;
+}
+#modal5 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more5{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--loki-color);
+    border: 2px solid var(--loki-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal6 */
+#modal6{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--spider-man-color) , rgb(226 111 115));
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal6.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal6 .form1{
+    margin-top: 20px;
+}
+#modal6 .watch6 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--spider-man-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--spider-man-color);
+    color: white;
+}
+
+#modal6 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--spider-man-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--spider-man-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal6 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--spider-man-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--spider-man-color);
+    color: white;
+}
+#modal6 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more6{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--spider-man-color);
+    border: 2px solid var(--spider-man-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal7 */
+#modal7{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--mouse-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal7.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal7 .form1{
+    margin-top: 20px;
+}
+#modal7 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal7 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--mouse-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal7 .go7{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mouse-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--mouse-color);
+}
+#modal7 .watch7 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mouse-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--mouse-color);
+    color: white;
+}
+#modal7 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more7{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--mouse-color);
+    border: 2px solid var(--mouse-color);
+    border-radius: 6px;
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal8 */
+#modal8{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--mr-robot-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal8.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal8 .form1{
+    margin-top: 20px;
+}
+#modal8 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal8 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--mr-robot-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal8 .go8{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mr-robot-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--mr-robot-color);
+}
+#modal8 .watch8 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mr-robot-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--mr-robot-color);
+    color: white;
+}
+#modal8 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more8{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--mr-robot-color);
+    border: 2px solid var(--mr-robot-color);
+    border-radius: 6px;
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal9 */
+#modal9{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--black-panther-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal9.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal9 .form1{
+    margin-top: 20px;
+}
+#modal9 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal9 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--black-panther-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal9 .go9{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--black-panther-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--black-panther-color);
+}
+#modal9 .watch9 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--black-panther-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--black-panther-color);
+    color: white;
+}
+#modal9 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more9{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--black-panther-color);
+    border: 2px solid var(--black-panther-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal10 */
+#modal10{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--intersteller-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal10.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal10 .form1{
+    margin-top: 20px;
+}
+#modal10 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal10 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--intersteller-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal10 .go10{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--intersteller-color);
+}
+#modal10 .watch10 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--intersteller-color);
+    color: white;
+}
+#modal10 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more10{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--intersteller-color);
+    border: 2px solid var(--intersteller-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+#modal10 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--intersteller-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal10 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--intersteller-color);
+    color: white;
+}
+
+/* modal11 */
+#modal11{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--black-adam-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal11.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal11 .form1{
+    margin-top: 20px;
+}
+#modal11 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal11 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--black-adam-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal11 .go11{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--black-adam-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--black-adam-color);
+}
+#modal11 .watch11 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--black-adam-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--black-adam-color);
+    color: white;
+}
+#modal11 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more11{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--black-adam-color);
+    border: 2px solid var(--black-adam-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal2 */
+#modal12{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--fast-and-surious-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal12.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal12 .form1{
+    margin-top: 20px;
+}
+#modal12 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal12 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--fast-and-surious-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal12 .go12{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--fast-and-surious-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--fast-and-surious-color);
+}
+#modal12 .watch12 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--fast-and-surious-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--fast-and-surious-color);
+    color: white;
+}
+#modal12 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more12{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--fast-and-surious-color);
+    border: 2px solid var(--fast-and-surious-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal13 */
+#modal13{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--alice-in-wonderland-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal13.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal13 .form1{
+    margin-top: 20px;
+}
+#modal13 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal13 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--alice-in-wonderland-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal13 .go13{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--alice-in-wonderland-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--alice-in-wonderland-color);
+}
+#modal13 .watch13 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--alice-in-wonderland-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--alice-in-wonderland-color);
+    color: white;
+}
+#modal13 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more13{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--alice-in-wonderland-color);
+    border: 2px solid var(--alice-in-wonderland-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal14 */
+#modal14{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--avatar-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal14.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal14 .form1{
+    margin-top: 20px;
+}
+#modal14 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal14 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--avatar-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal14 .go14{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--avatar-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--avatar-color);
+}
+#modal14 .watch14 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--avatar-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--avatar-color);
+    color: white;
+}
+#modal14 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more14{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--avatar-color);
+    border: 2px solid var(--avatar-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal15 */
+#modal15{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--big-mouth-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal15.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal15 .form1{
+    margin-top: 20px;
+}
+#modal15 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal15 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--big-mouth-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal15 .go15{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--big-mouth-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--big-mouth-color);
+}
+#modal15 .watch15 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--big-mouth-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--big-mouth-color);
+    color: white;
+}
+#modal15 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more15{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--big-mouth-color);
+    border: 2px solid var(--big-mouth-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal16 */
+#modal16{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--divergent-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal16.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal16.form1{
+    margin-top: 20px;
+}
+#modal16 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal16 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--divergent-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal16 .go16{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--divergent-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--divergent-color);
+}
+#modal16 .watch16 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--divergent-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--divergent-color);
+    color: white;
+}
+#modal16.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more16{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--divergent-color);
+    border: 2px solid var(--divergent-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal17 */
+#modal17{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--doctor-strange-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal17.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal17.form1{
+    margin-top: 20px;
+}
+#modal17 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal17 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--doctor-strange-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal17 .go17{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--doctor-strange-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--doctor-strange-color);
+}
+#modal17 .watch17 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--doctor-strange-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--doctor-strange-color);
+    color: white;
+}
+#modal17.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more17{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--doctor-strange-color);
+    border: 2px solid var(--doctor-strange-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal18 */
+#modal18{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background: linear-gradient(to bottom , var(--free-guy-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal18.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal18.form1{
+    margin-top: 20px;
+}
+#modal18 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal18 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--free-guy-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal18 .go18{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--free-guy-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--free-guy-color);
+}
+#modal18 .watch18 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--free-guy-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--free-guy-color);
+    color: white;
+}
+#modal18.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more18{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--free-guy-color);
+    border: 2px solid var(--free-guy-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal19 */
+#modal19{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--friends-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal19.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal19.form1{
+    margin-top: 20px;
+}
+#modal19 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal19 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--friends-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal19 .go19{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--friends-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--friends-color);
+}
+#modal19 .watch19 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--friends-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--friends-color);
+    color: white;
+}
+#modal19.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more19{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--friends-color);
+    border: 2px solid var(--friends-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal20 */
+#modal20{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--good-doctor-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal20.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal20.form1{
+    margin-top: 20px;
+}
+#modal20 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal20 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--good-doctor-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal20 .go20{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--good-doctor-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--good-doctor-color);
+}
+#modal20 .watch20 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--good-doctor-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--good-doctor-color);
+    color: white;
+}
+#modal20.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more20{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--good-doctor-color);
+    border: 2px solid var(--good-doctor-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal21 */
+#modal21{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--harry-poter-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal21.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal21.form1{
+    margin-top: 20px;
+}
+#modal21 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal21 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--harry-poter-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal21 .go21{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--harry-poter-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--harry-poter-color);
+}
+#modal21 .watch21 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--harry-poter-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--harry-poter-color);
+    color: white;
+}
+#modal21.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more21{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--harry-poter-color);
+    border: 2px solid var(--harry-poter-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal22 */
+#modal22{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--home-alone-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal22.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal22.form1{
+    margin-top: 20px;
+}
+#modal22 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal22 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--home-alone-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal22 .go22{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--home-alone-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--home-alone-color);
+}
+#modal22 .watch22 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--home-alone-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--home-alone-color);
+    color: white;
+}
+#modal22.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more22{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--home-alone-color);
+    border: 2px solid var(--home-alone-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal23 */
+#modal23{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--home-town-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal23.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal23.form1{
+    margin-top: 20px;
+}
+#modal23 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal23 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--home-town-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal23 .go23{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--home-town-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--home-town-color);
+}
+#modal23 .watch23 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--home-town-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--home-town-color);
+    color: white;
+}
+#modal23.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more23{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--home-town-color);
+    border: 2px solid var(--home-town-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal24 */
+#modal24{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--hunger-games-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal24.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal24.form1{
+    margin-top: 20px;
+}
+#modal24 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal24 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--hunger-games-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal24 .go24{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--hunger-games-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--hunger-games-color);
+}
+#modal24 .watch24 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--hunger-games-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--hunger-games-color);
+    color: white;
+}
+#modal24.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more24{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--hunger-games-color);
+    border: 2px solid var(--hunger-games-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal25 */
+#modal25{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--inception-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal25.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal25.form1{
+    margin-top: 20px;
+}
+#modal25 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal25 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--inception-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal25 .go25{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--inception-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--inception-color);
+}
+#modal25 .watch25 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--inception-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--inception-color);
+    color: white;
+}
+#modal25.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more25{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--inception-color);
+    border: 2px solid var(--inception-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal26*/
+#modal26{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--intersteller-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal26.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal26.form1{
+    margin-top: 20px;
+}
+#modal26 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal26 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--intersteller-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal26 .go26{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--intersteller-color);
+}
+#modal26 .watch26 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--intersteller-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--intersteller-color);
+    color: white;
+}
+#modal26.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more26{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--intersteller-color);
+    border: 2px solid var(--intersteller-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal27 */
+#modal27{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--john-week-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal27.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal27.form1{
+    margin-top: 20px;
+}
+#modal27 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal27 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--john-week-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal27 .go27{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--john-week-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--john-week-color);
+}
+#modal27 .watch27 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--john-week-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--john-week-color);
+    color: white;
+}
+#modal27.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more27{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--john-week-color);
+    border: 2px solid var(--john-week-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal28 */
+#modal28{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--little-women-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal28.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal28.form1{
+    margin-top: 20px;
+}
+#modal28 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal28 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--little-women-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal28 .go28{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--little-women-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--little-women-color);
+}
+#modal28 .watch28 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--little-women-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--little-women-color);
+    color: white;
+}
+#modal28.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more28{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--little-women-color);
+    border: 2px solid var(--little-women-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal29 */
+#modal29{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--loki-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal29.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal29.form1{
+    margin-top: 20px;
+}
+#modal29 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal29 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--loki-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal29 .go29{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--loki-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--loki-color);
+}
+#modal29 .watch29 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--loki-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--loki-color);
+    color: white;
+}
+#modal29.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more29{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--loki-color);
+    border: 2px solid var(--loki-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal30 */
+#modal30{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--toet-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal30.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal30.form1{
+    margin-top: 20px;
+}
+#modal30 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal30 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--toet-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal30 .go30{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--toet-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--toet-color);
+}
+#modal30 .watch30 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--toet-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--toet-color);
+    color: white;
+}
+#modal30.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more30{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--toet-color);
+    border: 2px solid var(--toet-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal31 */
+#modal31{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--suits-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal31.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal31.form1{
+    margin-top: 20px;
+}
+#modal31 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal31 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--suits-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal31 .go31{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--suits-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--suits-color);
+}
+#modal31 .watch31 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--suits-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--suits-color);
+    color: white;
+}
+#modal31.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more31{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--suits-color);
+    border: 2px solid var(--suits-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal32 */
+#modal32{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--tvd-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal32.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal32.form1{
+    margin-top: 20px;
+}
+#modal32 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal32 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--tvd-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal32 .go32{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--tvd-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--tvd-color);
+}
+#modal32 .watch32 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--tvd-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--tvd-color);
+    color: white;
+}
+#modal32.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more32{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--tvd-color);
+    border: 2px solid var(--tvd-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal33 */
+#modal33{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--wanda-vision-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal33.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal33.form1{
+    margin-top: 20px;
+}
+#modal33 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal33 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--wanda-vision-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal33 .go33{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wanda-vision-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--wanda-vision-color);
+}
+#modal33 .watch33 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wanda-vision-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--wanda-vision-color);
+    color: white;
+}
+#modal33.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more33{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--wanda-vision-color);
+    border: 2px solid var(--wanda-vision-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal34 */
+#modal34{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--werwwolof-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal34.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal34.form1{
+    margin-top: 20px;
+}
+#modal34 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal34 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--werwwolof-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal34 .go34{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--werwwolof-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--werwwolof-color);
+}
+#modal34 .watch34 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--werwwolof-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--werwwolof-color);
+    color: white;
+}
+#modal34.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more34{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--werwwolof-color);
+    border: 2px solid var(--werwwolof-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal35 */
+#modal35{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--wonder-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal35.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal35.form1{
+    margin-top: 20px;
+}
+#modal35 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal35 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--wonder-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal35 .go35{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wonder-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--wonder-color);
+}
+#modal35 .watch35 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--wonder-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--wonder-color);
+    color: white;
+}
+#modal35.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.home #more35{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--wonder-color);
+    border: 2px solid var(--wonder-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal36 */
+#modal36{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--oneone-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal36.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal36.form1{
+    margin-top: 20px;
+}
+#modal36 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal36 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--oneone-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal36 .go36{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--oneone-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--oneone-color);
+}
+#modal36 .watch36 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--oneone-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--oneone-color);
+    color: white;
+}
+#modal36.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more36{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--oneone-color);
+    border: 2px solid var(--oneone-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal37 */
+#modal37{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--behind-hereyes-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal37.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal37.form1{
+    margin-top: 20px;
+}
+#modal37 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal37 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--behind-hereyes-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal37 .go37{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--behind-hereyes-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--behind-hereyes-color);
+}
+#modal37 .watch37 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--behind-hereyes-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--behind-hereyes-color);
+    color: white;
+}
+#modal37.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more37{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--behind-hereyes-color);
+    border: 2px solid var(--behind-hereyes-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal38 */
+#modal38{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--bridgerton-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal38.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal38.form1{
+    margin-top: 20px;
+}
+#modal38 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal38 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background: var(--bridgerton-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal38 .go38{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bridgerton-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background: var(--bridgerton-color);
+}
+#modal38 .watch38 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bridgerton-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--bridgerton-color);
+    color: white;
+}
+#modal38.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more38{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--bridgerton-color);
+    border: 2px solid var(--bridgerton-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal39 */
+#modal39{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--dark-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal39.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal39.form1{
+    margin-top: 20px;
+}
+#modal39 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal39 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--dark-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal39 .go39{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--dark-color);
+}
+#modal39 .watch39 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--dark-color);
+    color: white;
+}
+#modal39.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more39{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--dark-color);
+    border: 2px solid var(--dark-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal40 */
+#modal40{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--got-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal40.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal40.form1{
+    margin-top: 20px;
+}
+#modal40 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal40 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--got-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal40 .go40{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--got-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--got-color);
+
+}
+#modal40 .watch40 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--got-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--got-color);
+    color: white;
+}
+#modal40.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more40{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--got-color);
+    border: 2px solid var(--got-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal41 */
+#modal41{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--house-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal41.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal41.form1{
+    margin-top: 20px;
+}
+#modal41 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal41 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--house-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal41 .go41{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--house-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--house-color);
+    
+}
+#modal41 .watch41 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--house-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--house-color);
+    color: white;
+}
+
+#modal41.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more41{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--house-color);
+    border: 2px solid var(--house-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal42 */
+#modal42{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--lacasa-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal42.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal42.form1{
+    margin-top: 20px;
+}
+#modal42 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal42 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--lacasa-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal42 .go42{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lacasa-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--lacasa-color);
+    
+}
+#modal42 .watch42 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lacasa-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lacasa-color);
+    color: white;
+}
+
+#modal42.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more42{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--lacasa-color);
+    border: 2px solid var(--lacasa-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal43 */
+#modal43{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--lusifier-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal43.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal43.form1{
+    margin-top: 20px;
+}
+#modal43 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal43 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--lusifier-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal43 .go43{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lusifier-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--lusifier-color);
+    
+}
+#modal43 .watch43 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lusifier-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lusifier-color);
+    color: white;
+}
+
+#modal43.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more43{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--lusifier-color);
+    border: 2px solid var(--lusifier-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal44 */
+#modal44{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--originals-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal44.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal44.form1{
+    margin-top: 20px;
+}
+#modal44 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal44 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var( --originals-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal44 .go44{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var( --originals-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--originals-color);
+    
+}
+#modal44 .watch44 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var( --originals-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var( --originals-color);
+    color: white;
+}
+
+#modal44.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more44{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var( --originals-color);
+    border: 2px solid var( --originals-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal45 */
+#modal45{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var( --witcher-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal45.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal45.form1{
+    margin-top: 20px;
+}
+#modal45 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal45 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var( --witcher-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal45 .go45{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var( --witcher-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var( --witcher-color);
+    
+}
+#modal45 .watch45 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var( --witcher-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var( --witcher-color);
+    color: white;
+}
+
+#modal45.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more45{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var( --witcher-color);
+    border: 2px solid var( --witcher-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal46 */
+#modal46{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--therain-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal46.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal46.form1{
+    margin-top: 20px;
+}
+#modal46 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal46 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--therain-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal46 .go46{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--therain-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--therain-color);
+    
+}
+#modal46 .watch46 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--therain-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--therain-color);
+    color: white;
+}
+
+#modal46.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more46{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--therain-color);
+    border: 2px solid var(--therain-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal47 */
+#modal47{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--the100-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal47.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal47.form1{
+    margin-top: 20px;
+}
+#modal47 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal47 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--the100-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal47 .go47{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--the100-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--the100-color);
+    
+}
+#modal47 .watch47 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--the100-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--the100-color);
+    color: white;
+}
+
+#modal47.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more47{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--the100-color);
+    border: 2px solid var(--the100-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal48 */
+#modal48{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--teenwolf-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal48.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal48.form1{
+    margin-top: 20px;
+}
+#modal48 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal48 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--teenwolf-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal48 .go48{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--teenwolf-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--teenwolf-color);
+    
+}
+#modal48 .watch48 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--teenwolf-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--teenwolf-color);
+    color: white;
+}
+
+#modal48.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more48{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--teenwolf-color);
+    border: 2px solid var(--teenwolf-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal49*/
+#modal49{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--supernatural-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal49.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal49.form1{
+    margin-top: 20px;
+}
+#modal49 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal49 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--supernatural-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal49 .go49{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--supernatural-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--supernatural-color);
+    
+}
+#modal49 .watch49 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--supernatural-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--supernatural-color);
+    color: white;
+}
+
+#modal49.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more49{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--supernatural-color);
+    border: 2px solid var(--supernatural-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal50*/
+#modal50{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--sandman-color) , #040404);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal50.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal50.form1{
+    margin-top: 20px;
+}
+#modal50 form label{
+    font-size: 18px;
+    padding: 3px 10px;
+    color: white;
+}
+#modal50 form select{
+    text-transform: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 3px 2px;
+    outline: none;
+    color: white;
+    background:var(--sandman-color);
+    border: none;
+    border-radius: 2px;
+}
+#modal50 .go50{
+    position: relative;
+    right: -210px;
+    top: -30px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--sandman-color);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background:var(--sandman-color);
+    
+}
+#modal50 .watch50 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--sandman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--sandman-color);
+    color: white;
+}
+
+#modal50.close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.series #more50{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--sandman-color);
+    border: 2px solid var(--sandman-color);
+    border-radius: 6px;
+    display: block;
+    margin: 3px auto;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* modal51 */
+#modal51{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--a-beatifulmind-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal51.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal51 .form1{
+    margin-top: 20px;
+}
+#modal51 .watch51 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--a-beatifulmind-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--a-beatifulmind-color);
+    color: white;
+}
+
+#modal51 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--a-beatifulmind-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--a-beatifulmind-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal51 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--a-beatifulmind-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--a-beatifulmind-color);
+    color: white;
+}
+#modal51 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more51{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--a-beatifulmind-color);
+    border: 2px solid var(--a-beatifulmind-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal52 */
+#modal52{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--ageofadaline-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal52.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal52 .form1{
+    margin-top: 20px;
+}
+#modal52 .watch51 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ageofadaline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ageofadaline-color);
+    color: white;
+}
+
+#modal52 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ageofadaline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ageofadaline-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal52 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ageofadaline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ageofadaline-color);
+    color: white;
+}
+#modal52 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more52{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--ageofadaline-color);
+    border: 2px solid var(--ageofadaline-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal53 */
+#modal53{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--anabelle-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal53.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal53 .form1{
+    margin-top: 20px;
+}
+#modal53 .watch53 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--anabelle-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--anabelle-color);
+    color: white;
+}
+
+#modal53 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--anabelle-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--anabelle-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal53 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--anabelle-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--anabelle-color);
+    color: white;
+}
+#modal53 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more53{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--anabelle-color);
+    border: 2px solid var(--anabelle-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal54 */
+#modal54{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--ironman-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal54.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal54 .form1{
+    margin-top: 20px;
+}
+#modal54 .watch54 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ironman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ironman-color);
+    color: white;
+}
+
+#modal54 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ironman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ironman-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal54 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--ironman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--ironman-color);
+    color: white;
+}
+#modal54 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more54{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--ironman-color);
+    border: 2px solid var(--ironman-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal55 */
+#modal55{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--collateralbeauty-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal55.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal55 .form1{
+    margin-top: 20px;
+}
+#modal55 .watch55 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--collateralbeauty-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--collateralbeauty-color);
+    color: white;
+}
+
+#modal55 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--collateralbeauty-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--collateralbeauty-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal55 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--collateralbeauty-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--collateralbeauty-color);
+    color: white;
+}
+#modal55 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more55{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--collateralbeauty-color);
+    border: 2px solid var(--collateralbeauty-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal56 */
+#modal56{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--captainamerica-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal56.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal56 .form1{
+    margin-top: 20px;
+}
+#modal56 .watch56 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--captainamerica-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--captainamerica-color);
+    color: white;
+}
+
+#modal56 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--captainamerica-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--captainamerica-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal56 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--captainamerica-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--captainamerica-color);
+    color: white;
+}
+#modal56 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more56{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--captainamerica-color);
+    border: 2px solid var(--captainamerica-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal57 */
+#modal57{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--beginagain-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal57.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal57 .form1{
+    margin-top: 20px;
+}
+#modal57 .watch57 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--beginagain-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--beginagain-color);
+    color: white;
+}
+
+#modal57 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--beginagain-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--beginagain-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal57 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--beginagain-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--beginagain-color);
+    color: white;
+}
+#modal57 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more57{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--beginagain-color);
+    border: 2px solid var(--beginagain-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal58 */
+#modal58{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--proposal-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal58.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal58 .form1{
+    margin-top: 20px;
+}
+
+#modal58 .watch58 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--proposal-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--proposal-color);
+    color: white;
+}
+
+#modal58 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--proposal-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--proposal-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal58 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--proposal-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--proposal-color);
+    color: white;
+}
+#modal58 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more58{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--proposal-color);
+    border: 2px solid var(--proposal-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal59 */
+#modal59{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--princessdiaries-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal59.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal59 .form1{
+    margin-top: 20px;
+}
+#modal59 .watch59 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--princessdiaries-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--princessdiaries-color);
+    color: white;
+}
+
+#modal59 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--princessdiaries-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--princessdiaries-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal59 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--princessdiaries-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--princessdiaries-color);
+    color: white;
+}
+#modal59 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more59{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--princessdiaries-color);
+    border: 2px solid var(--princessdiaries-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal60 */
+#modal60{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--starwars-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal60.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal60 .form1{
+    margin-top: 20px;
+}
+#modal60 .watch60 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--starwars-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--starwars-color);
+    color: white;
+}
+
+#modal60 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--starwars-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--starwars-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal60 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--starwars-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--starwars-color);
+    color: white;
+}
+#modal60 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more60{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--starwars-color);
+    border: 2px solid var(--starwars-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal61 */
+#modal61{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--lion-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal61.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal61 .form1{
+    margin-top: 20px;
+}
+#modal61 .watch61 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lion-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lion-color);
+    color: white;
+}
+
+#modal61 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lion-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lion-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal61 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lion-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lion-color);
+    color: white;
+}
+#modal61 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more61{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--lion-color);
+    border: 2px solid var(--lion-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal62 */
+#modal62{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--nowyouseeme-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal62.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal62 .form1{
+    margin-top: 20px;
+}
+#modal62 .watch62 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nowyouseeme-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nowyouseeme-color);
+    color: white;
+}
+
+#modal62 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nowyouseeme-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nowyouseeme-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal62 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nowyouseeme-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nowyouseeme-color);
+    color: white;
+}
+#modal62 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more62{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--nowyouseeme-color);
+    border: 2px solid var(--nowyouseeme-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal63 */
+#modal63{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--lordofrings-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal63.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal63 .form1{
+    margin-top: 20px;
+}
+#modal63 .watch63 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lordofrings-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lordofrings-color);
+    color: white;
+}
+
+#modal63 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lordofrings-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lordofrings-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal63 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lordofrings-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lordofrings-color);
+    color: white;
+}
+#modal63 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more63{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--lordofrings-color);
+    border: 2px solid var(--lordofrings-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal64 */
+#modal64{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--mazerunner-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal64.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal64 .form1{
+    margin-top: 20px;
+}
+#modal64 .watch64 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mazerunner-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--mazerunner-color);
+    color: white;
+}
+
+#modal64 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mazerunner-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--mazerunner-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal64 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--mazerunner-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--mazerunner-color);
+    color: white;
+}
+#modal64 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more64{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--mazerunner-color);
+    border: 2px solid var(--mazerunner-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal65 */
+#modal65{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--antman-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal65.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal65 .form1{
+    margin-top: 20px;
+}
+#modal65 .watch65 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--antman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--antman-color);
+    color: white;
+}
+
+#modal65 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--antman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--antman-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal65 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--antman-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--antman-color);
+    color: white;
+}
+#modal65 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.movies #more65{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--antman-color);
+    border: 2px solid var(--antman-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+
+/* modal66 */
+#modal66{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--bighero6-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal66.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal66 .form1{
+    margin-top: 20px;
+}
+#modal66 .watch66 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bighero6-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--bighero6-color);
+    color: white;
+}
+
+#modal66 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bighero6-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--bighero6-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal66 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bighero6-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--bighero6-color);
+    color: white;
+}
+#modal66 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more66{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--bighero6-color);
+    border: 2px solid var(--bighero6-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal67 */
+#modal67{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--brave-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal67.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal67 .form1{
+    margin-top: 20px;
+}
+#modal67 .watch67 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--brave-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--brave-color);
+    color: white;
+}
+
+#modal67 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--brave-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--brave-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal67 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--brave-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--brave-color);
+    color: white;
+}
+#modal67 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more67{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--brave-color);
+    border: 2px solid var(--brave-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal68 */
+#modal68{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--coco-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal68.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal68 .form1{
+    margin-top: 20px;
+}
+#modal68 .watch68 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coco-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coco-color);
+    color: white;
+}
+
+#modal68 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coco-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coco-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal68 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coco-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coco-color);
+    color: white;
+}
+#modal68 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more68{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--coco-color);
+    border: 2px solid var(--coco-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal69 */
+#modal69{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--coraline-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal69.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal69 .form1{
+    margin-top: 20px;
+}
+#modal69 .watch69 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coraline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coraline-color);
+    color: white;
+}
+
+#modal69 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coraline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coraline-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal69 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--coraline-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--coraline-color);
+    color: white;
+}
+#modal69 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more69{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--coraline-color);
+    border: 2px solid var(--coraline-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+
+/* modal70 */
+#modal70{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--cropsepride-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal70.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal70 .form1{
+    margin-top: 20px;
+}
+#modal70 .watch70 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--cropsepride-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--cropsepride-color);
+    color: white;
+}
+
+#modal70 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--cropsepride-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--cropsepride-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal70 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--cropsepride-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--cropsepride-color);
+    color: white;
+}
+#modal70 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more70{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--cropsepride-color);
+    border: 2px solid var(--cropsepride-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal71 */
+#modal71{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--encanto-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal71.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal71 .form1{
+    margin-top: 20px;
+}
+#modal71 .watch71 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--encanto-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--encanto-color);
+    color: white;
+}
+
+#modal71 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--encanto-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--encanto-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal71 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--encanto-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--encanto-color);
+    color: white;
+}
+#modal71 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more71{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--encanto-color);
+    border: 2px solid var(--encanto-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal72 */
+#modal72{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--hoteltranslvnia-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal72.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal72 .form1{
+    margin-top: 20px;
+}
+#modal72 .watch72 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--hoteltranslvnia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--hoteltranslvnia-color);
+    color: white;
+}
+#modal72 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--hoteltranslvnia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--hoteltranslvnia-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal72 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--hoteltranslvnia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--hoteltranslvnia-color);
+    color: white;
+}
+#modal72 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more72{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--hoteltranslvnia-color);
+    border: 2px solid var(--hoteltranslvnia-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal73 */
+#modal73{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--insideout-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal73.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal73 .form1{
+    margin-top: 20px;
+}
+#modal73 .watch73 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--insideout-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--insideout-color);
+    color: white;
+}
+#modal73 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--insideout-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--insideout-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal73 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--insideout-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--insideout-color);
+    color: white;
+}
+#modal73 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more73{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--insideout-color);
+    border: 2px solid var(--insideout-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal74 */
+#modal74{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--nutcracker-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal74.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal74 .form1{
+    margin-top: 20px;
+}
+#modal74 .watch74 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nutcracker-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nutcracker-color);
+    color: white;
+}
+#modal74 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nutcracker-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nutcracker-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal74 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--nutcracker-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--nutcracker-color);
+    color: white;
+}
+#modal74 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more74{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--nutcracker-color);
+    border: 2px solid var(--nutcracker-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal75 */
+#modal75{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--pinocchio-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal75.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal75 .form1{
+    margin-top: 20px;
+}
+#modal75 .watch75 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--pinocchio-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--pinocchio-color);
+    color: white;
+}
+#modal75 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--pinocchio-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--pinocchio-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal75 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--pinocchio-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--pinocchio-color);
+    color: white;
+}
+#modal75 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more75{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--pinocchio-color);
+    border: 2px solid var(--pinocchio-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal76 */
+#modal76{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--zootopia-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal76.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal76 .form1{
+    margin-top: 20px;
+}
+#modal76 .watch76 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--zootopia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--zootopia-color);
+    color: white;
+}
+
+#modal76 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--zootopia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--zootopia-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal76 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--zootopia-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--zootopia-color);
+    color: white;
+}
+#modal76 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more76{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--zootopia-color);
+    border: 2px solid var(--zootopia-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal77 */
+#modal77{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--lionking-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal77.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal77 .form1{
+    margin-top: 20px;
+}
+#modal77 .watch77 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lionking-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lionking-color);
+    color: white;
+}
+#modal77 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lionking-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lionking-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal77 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--lionking-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--lionking-color);
+    color: white;
+}
+#modal77 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more77{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--lionking-color);
+    border: 2px solid var(--lionking-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal78 */
+#modal78{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--incredibles-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal78.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal78 .form1{
+    margin-top: 20px;
+}
+#modal78 .watch78 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--incredibles-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--incredibles-color);
+    color: white;
+}
+#modal78 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--incredibles-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--incredibles-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal78 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--incredibles-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--incredibles-color);
+    color: white;
+}
+#modal78 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more78{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--incredibles-color);
+    border: 2px solid var(--incredibles-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal79 */
+#modal79{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--gooddinasour-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal79.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal79 .form1{
+    margin-top: 20px;
+}
+#modal79 .watch79 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--gooddinasour-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--gooddinasour-color);
+    color: white;
+}
+
+#modal79 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--gooddinasour-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--gooddinasour-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal79 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--gooddinasour-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--gooddinasour-color);
+    color: white;
+}
+#modal79 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more79{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--gooddinasour-color);
+    border: 2px solid var(--gooddinasour-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
+/* modal80 */
+#modal80{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background:linear-gradient(to bottom , var(--klaus-color) , black);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    max-width: 577px;
+    max-height: 650px;
+    z-index: 10;
+}
+#modal80.active {
+    transform: translate(-50%, -50%) scale(1);
+}  
+#modal80 .form1{
+    margin-top: 20px;
+}
+#modal80 .watch80 {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--klaus-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--klaus-color);
+    color: white;
+}
+
+#modal80 .form1 .wat {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--klaus-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--klaus-color);
+    margin-left: 10px;
+    color: white;
+}
+#modal80 .form1 .down {
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--klaus-color);
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: var(--klaus-color);
+    color: white;
+}
+#modal80 .close{
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+.kids #more80{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: var(--klaus-color);
+    border: 2px solid var(--klaus-color);
+    border-radius: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    margin: 3px auto;
+}
