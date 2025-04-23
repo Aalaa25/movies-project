@@ -8,7 +8,7 @@ Welcome to the **Movies Project** — a sleek, fun, and animated website to expl
 ## 🌟 Live Demo
 > 🎥 *Check out the magic in action!*
 
-![Movies Project Demo](moviesapp.gif)
+![Movies Project Demo](moviesapp.mp4)
 
 ---
 
